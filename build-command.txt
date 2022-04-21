@@ -1,0 +1,3 @@
+docker run --rm --name slate -v c:\projects\documentations\loyalty-docs/build:/srv/slate/build -v c:\projects\documentations\loyalty-docs/source:/srv/slate/source slatedocs/slate build
+
+docker run --rm --name slate -p 4567:4567 -v c:\projects\documentations\loyalty-docs/source:/srv/slate/source slatedocs/slate serve
